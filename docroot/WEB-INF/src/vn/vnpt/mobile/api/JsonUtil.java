@@ -351,17 +351,13 @@ public class JsonUtil {
 		}
 		
 		try {
-			
-			System.out.println("PHINT ===== begin");
-			
+			// System.out.println("PHINT ===== begin");
 			JSONArray arrList = JSONFactoryUtil.createJSONArray();
 			List<HoSoTTHCCong> listResultHoSo = new ArrayList<HoSoTTHCCong>();
-			// listResultHoSo = HoSoTTHCCongLocalServiceUtil.timKiemHoSoByMSBN(MaSoBienNhan);
-			
 			listResultHoSo = HoSoTTHCCongLocalServiceUtil.findHoSoByMaSoBienNhanOrSoCMNDNguoiNop(MaSoBienNhan, "");
 		    
 			int i = 0;
-			System.out.println("PHINT ===== soluong HS" + listResultHoSo.size());
+			// System.out.println("PHINT ===== soluong HS" + listResultHoSo.size());
 			
 			for (HoSoTTHCCong hoSoTTHCCong : listResultHoSo) {
 				
